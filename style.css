@@ -1,0 +1,50 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000;
+}
+
+video {
+    transform: scaleY(-1);
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+}
+
+#controls {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#fullscreen {
+    background-color: #282828;
+    color: white;
+    border: 1px solid #666;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-family: sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.2s;
+}
+
+#fullscreen:hover {
+    background-color: #383838;
+}
+
+#fullscreen svg {
+    width: 20px;
+    height: 20px;
+}
